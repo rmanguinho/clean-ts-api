@@ -1,8 +1,7 @@
 {
   "name": "clean-node-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
   "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
@@ -11,8 +10,7 @@
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Rodrigo Manguinho",
   "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.3",
