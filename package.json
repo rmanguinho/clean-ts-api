@@ -18,6 +18,7 @@
     "@types/bcrypt": "^3.0.0",
     "@types/express": "^4.17.2",
     "@types/jest": "^24.0.25",
+    "@types/jsonwebtoken": "^8.3.7",
     "@types/mongodb": "^3.3.14",
     "@types/node": "^13.1.6",
     "@types/supertest": "^2.0.8",
@@ -42,6 +43,7 @@
     "bcrypt": "^3.0.7",
     "express": "^4.17.1",
     "fast-glob": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.1",
     "validator": "^12.1.0"
   }
