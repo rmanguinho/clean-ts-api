@@ -35,7 +35,7 @@
     "git-commit-msg-linter": "^2.3.11",
     "husky": "^4.0.6",
     "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
+    "lint-staged": "^10.0.0",
     "rimraf": "^3.0.2",
     "sucrase": "^3.12.1",
     "supertest": "^4.0.2",
