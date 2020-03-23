@@ -3,7 +3,8 @@
     "outDir": "dist",
     "module": "commonjs",
     "target": "es2019",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "sourceMap": true
   },
   "include": [
     "src"
