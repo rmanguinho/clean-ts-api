@@ -5,7 +5,7 @@
 1. ✅ Valida dados obrigatórios **name**, **email**, **password** e **passwordConfirmation**
 1. ✅ Valida que **password** e **passwordConfirmation** são iguais
 1. ✅ Valida que o campo **email** é um e-mail válido
-1. ⛔️ Valida se já existe um usuário com o email fornecido
+1. ✅ Valida se já existe um usuário com o email fornecido
 1. ✅ Gera uma senha criptografada (essa senha não pode ser descriptografada)
 1. ✅ Cria uma conta para o usuário com os dados informados, substituindo a senha pela senha criptorafada
 1. ✅ Gera um token de acesso a partir do ID do usuário
