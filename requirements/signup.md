@@ -8,9 +8,9 @@
 1. ⛔️ Valida se já existe um usuário com o email fornecido
 1. ✅ Gera uma senha criptografada (essa senha não pode ser descriptografada)
 1. ✅ Cria uma conta para o usuário com os dados informados, substituindo a senha pela senha criptorafada
-1. ⛔️ Gera um token de acesso a partir do ID do usuário
-1. ⛔️ Atualiza os dados do usuário com o token de acesso gerado
-1. ⛔️ Retorna 200 com o token de acesso
+1. ✅ Gera um token de acesso a partir do ID do usuário
+1. ✅ Atualiza os dados do usuário com o token de acesso gerado
+1. ✅ Retorna 200 com o token de acesso
 
 > ## Exceções:
 1. ✅ Retorna erro 404 se a API não existir
@@ -20,5 +20,5 @@
 1. ⛔️ Retorna erro 403 se o email fornecido já estiver em uso
 1. ✅ Retorna erro 500 se der erro ao tentar gerar uma senha criptografada
 1. ✅ Retorna erro 500 se der erro ao tentar criar a conta do usuário
-1. ⛔️ Retorna erro 500 se der erro ao tentar gerar o token de acesso
-1. ⛔️ Retorna erro 500 se der erro ao tentar atualizar o usuário com o token de acesso gerado
+1. ✅ Retorna erro 500 se der erro ao tentar gerar o token de acesso
+1. ✅ Retorna erro 500 se der erro ao tentar atualizar o usuário com o token de acesso gerado
