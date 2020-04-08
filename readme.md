@@ -30,6 +30,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Adapter
 * Composite
 * Decorator
+* Proxy
 * Dependency Injection
 * Abstract Server
 * Composition Root
