@@ -1,6 +1,6 @@
 {
   "name": "clean-node-api",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
   "author": "Rodrigo Manguinho",
   "license": "ISC",
