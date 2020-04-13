@@ -47,6 +47,9 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Modular Design
 * Dependency Diagrams
 * Use Cases
+* Continuous Integration
+* Continuous Delivery
+* Continuous Deployment
 
 > ## Bibliotecas e ferramentas utilizadas:
 * NPM
@@ -55,6 +58,8 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Docker
 * Jest
 * MongoDb
+* Travis CI
+* Coveralls
 * Bcrypt
 * JsonWebToken
 * Validator
