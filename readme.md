@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/rmanguinho/clean-ts-api.svg?branch=master)](https://travis-ci.org/rmanguinho/clean-ts-api)
 [![Coverage Status](https://coveralls.io/repos/github/rmanguinho/clean-ts-api/badge.svg)](https://coveralls.io/github/rmanguinho/clean-ts-api)
+[![Known Vulnerabilities](https://snyk.io/test/github/rmanguinho/clean-ts-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rmanguinho/clean-ts-api?targetFile=package.json)
 
 # **Clean Node API**
 
