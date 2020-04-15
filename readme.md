@@ -77,6 +77,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Nodemon
 * Rimraf
 * In-Memory MongoDb Server
+* MockDate
 
 > ## Features abordadas
 
