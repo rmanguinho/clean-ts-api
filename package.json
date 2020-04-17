@@ -7,7 +7,7 @@
   "repository": "github:rmanguinho/clean-ts-api",
   "scripts": {
     "start": "node dist/main/server.js",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
     "debug": "nodemon -L --watch ./dist --inspect=0.0.0.0:9222 --nolazy ./dist/main/server.js",
     "up": "npm run build && docker-compose up -d",
     "down": "docker-compose down",
@@ -51,11 +51,15 @@
     "bcrypt": "^3.0.8",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
     "mongodb": "^3.5.6",
     "nodemon": "^2.0.3",
     "validator": "^12.2.0"
   },
   "engines": {
     "node": "12.x"
+  },
+  "_moduleAliases": {
+    "@": "dist"
   }
 }
