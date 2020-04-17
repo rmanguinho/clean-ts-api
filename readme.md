@@ -80,6 +80,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Rimraf
 * In-Memory MongoDb Server
 * MockDate
+* Module-Alias
 
 > ## Features abordadas
 
@@ -98,3 +99,6 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Deploy no Heroku
 * Uso de breakpoints no Typescript
 * Uso correto de tags no Git
+* Conceitos avançados de POO
+* Modularização de paths
+* Interface vs TypeAlias
