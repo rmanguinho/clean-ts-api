@@ -30,7 +30,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Interface Segregation Principle (ISP)
 * Dependency Inversion Principle (DIP)
 * Don't Repeat Yourself (DRY)
-* You aren't gonna need it (YAGNI)
+* You Aren't Gonna Need It (YAGNI)
 * Composition Over Inheritance
 * Small Commits
 

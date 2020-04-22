@@ -3,7 +3,7 @@
   "version": "2.0.3",
   "description": "NodeJs Rest API using TDD, Clean Architecture and Typescript",
   "author": "Rodrigo Manguinho",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "repository": "github:rmanguinho/clean-ts-api",
   "scripts": {
     "start": "node dist/main/server.js",
