@@ -35,6 +35,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Dependency Inversion Principle (DIP)
 * Don't Repeat Yourself (DRY)
 * You Aren't Gonna Need It (YAGNI)
+* Keep It Simple, Silly (KISS)
 * Composition Over Inheritance
 * Small Commits
 
