@@ -28,6 +28,7 @@
     "@types/mongodb": "^3.5.14",
     "@types/node": "^13.13.4",
     "@types/supertest": "^2.0.8",
+    "@types/swagger-ui-express": "^4.1.2",
     "@types/validator": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "coveralls": "^3.1.0",
@@ -54,6 +55,7 @@
     "module-alias": "^2.2.2",
     "mongodb": "^3.5.6",
     "nodemon": "^2.0.3",
+    "swagger-ui-express": "^4.1.4",
     "validator": "^13.0.0"
   },
   "engines": {
