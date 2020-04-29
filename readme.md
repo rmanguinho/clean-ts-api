@@ -134,3 +134,16 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Mocks
 * Stubs
 * Spies
+
+> ## Features do MongoDb
+
+* Connect e Reconnect
+* Collections
+* InsertOne e InserMany
+* Find, FindOne e FindOneAndUpdate
+* DeleteMany
+* UpdateOne
+* Aggregation (Match, Group, Unwind, Lookup, AddFields, Project)
+* ObjectId
+* Upsert e ReturnOriginal
+* Push, Divide, Multiply, ArrayElemAt, Filter, Cond, Sum
