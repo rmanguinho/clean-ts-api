@@ -16,5 +16,6 @@ export const surveyResultSchema = {
     date: {
       type: 'string'
     }
-  }
+  },
+  required: ['id', 'surveyId', 'accountId', 'answer', 'date']
 }

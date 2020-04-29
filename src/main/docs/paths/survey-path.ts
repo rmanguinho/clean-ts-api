@@ -5,6 +5,7 @@ export const surveyPath = {
     }],
     tags: ['Enquete'],
     summary: 'API para listar todas as enquetes',
+    description: 'Essa rota só pode ser executada por **usuários autenticados**',
     responses: {
       200: {
         description: 'Sucesso',
@@ -15,6 +16,9 @@ export const surveyPath = {
             }
           }
         }
+      },
+      204: {
+        description: 'Sucesso, mas sem dados para exibir'
       },
       403: {
         $ref: '#/components/forbidden'
@@ -33,7 +37,9 @@ export const surveyPath = {
     }],
     tags: ['Enquete'],
     summary: 'API para criar uma enquete',
+    description: 'Essa rota só pode ser executada por **administradores**',
     requestBody: {
+      required: true,
       content: {
         'application/json': {
           schema: {
@@ -44,7 +50,7 @@ export const surveyPath = {
     },
     responses: {
       204: {
-        description: 'Sucesso'
+        description: 'Sucesso, mas sem dados para exibir'
       },
       403: {
         $ref: '#/components/forbidden'

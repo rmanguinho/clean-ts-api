@@ -4,5 +4,6 @@ export const accountSchema = {
     accessToken: {
       type: 'string'
     }
-  }
+  },
+  required: ['accessToken']
 }

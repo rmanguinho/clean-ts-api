@@ -10,5 +10,6 @@ export const addSurveyParamsSchema = {
         $ref: '#/schemas/surveyAnswer'
       }
     }
-  }
+  },
+  required: ['question', 'answers']
 }
