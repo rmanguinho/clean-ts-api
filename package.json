@@ -53,7 +53,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
-    "mongodb": "^3.5.6",
+    "mongodb": "^3.5.7",
     "nodemon": "^2.0.3",
     "swagger-ui-express": "^4.1.4",
     "validator": "^13.0.0"
