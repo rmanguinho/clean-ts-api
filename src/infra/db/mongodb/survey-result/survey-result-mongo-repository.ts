@@ -19,7 +19,6 @@ export class SurveyResultMongoRepository implements SaveSurveyResultRepository {
       upsert: true
     })
     const surveyResult = await this.loadBySurveyId(data.surveyId)
-    console.log(surveyResult)
     return surveyResult
   }
 
