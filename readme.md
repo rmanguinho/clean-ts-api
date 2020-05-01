@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/rmanguinho/clean-ts-api.svg?branch=master)](https://travis-ci.org/rmanguinho/clean-ts-api)
 [![Coverage Status](https://coveralls.io/repos/github/rmanguinho/clean-ts-api/badge.svg)](https://coveralls.io/github/rmanguinho/clean-ts-api)
 [![Known Vulnerabilities](https://snyk.io/test/github/rmanguinho/clean-ts-api/badge.svg)](https://snyk.io/test/github/rmanguinho/clean-ts-api)
-![Dependabot](https://flat.badgen.net/dependabot/rmanguinho/clean-ts-api?icon=dependabot)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
@@ -19,7 +18,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 
 ## [**Link para a documentação da API**](http://fordevs.herokuapp.com/api-docs)
 
-> ## APIs previstas para esse treinamento
+> ## APIs construídas no treinamento
 
 1. [Cadastro](./requirements/signup.md)
 2. [Login](./requirements/login.md)
@@ -77,9 +76,10 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * MongoDb
 * Travis CI
 * Swagger
-* Coveralls
 * Bcrypt
 * JsonWebToken
+* Faker
+* Coveralls
 * Validator
 * Express
 * Supertest
@@ -132,9 +132,11 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Testes Unitários
 * Testes de Integração
 * Cobertura de Testes
+* Test Doubles
 * Mocks
 * Stubs
 * Spies
+* Fakes
 
 > ## Features do MongoDb
 
