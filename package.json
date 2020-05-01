@@ -41,7 +41,7 @@
     "git-commit-msg-linter": "^2.4.2",
     "husky": "^4.2.5",
     "jest": "^25.4.0",
-    "lint-staged": "^10.2.0",
+    "lint-staged": "^10.2.2",
     "mockdate": "^2.0.5",
     "rimraf": "^3.0.2",
     "supertest": "^4.0.2",
