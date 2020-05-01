@@ -40,7 +40,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "git-commit-msg-linter": "^2.4.2",
     "husky": "^4.2.5",
-    "jest": "^25.4.0",
+    "jest": "^25.5.3",
     "lint-staged": "^10.2.0",
     "mockdate": "^2.0.5",
     "rimraf": "^3.0.2",
