@@ -27,7 +27,7 @@
     "@types/jsonwebtoken": "^8.3.9",
     "@types/mongodb": "^3.5.14",
     "@types/node": "^13.13.4",
-    "@types/supertest": "^2.0.8",
+    "@types/supertest": "^2.0.9",
     "@types/swagger-ui-express": "^4.1.2",
     "@types/validator": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
