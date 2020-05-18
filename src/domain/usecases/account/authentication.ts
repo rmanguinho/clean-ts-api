@@ -4,5 +4,5 @@ export type AuthenticationParams = {
 }
 
 export interface Authentication {
-  auth (authenticationParams: AuthenticationParams): Promise<string>
+  auth: (authenticationParams: AuthenticationParams) => Promise<string>
 }

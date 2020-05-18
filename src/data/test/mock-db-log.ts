@@ -5,6 +5,5 @@ export class LogErrorRepositorySpy implements LogErrorRepository {
 
   async logError (stack: string): Promise<void> {
     this.stack = stack
-    return Promise.resolve()
   }
 }
