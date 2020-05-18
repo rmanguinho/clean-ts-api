@@ -1,5 +1,5 @@
 import { LoadSurveyResultController } from './load-survey-result-controller'
-import { HttpRequest } from './load-survey-result-controller-protocols'
+import { HttpRequest } from '@/presentation/protocols'
 import { LoadSurveyByIdSpy, LoadSurveyResultSpy } from '@/presentation/test'
 import { forbidden, serverError, ok } from '@/presentation/helpers/http/http-helper'
 import { InvalidParamError } from '@/presentation/errors'
