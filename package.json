@@ -34,7 +34,7 @@
     "@types/swagger-ui-express": "^4.1.2",
     "@types/validator": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "copyfiles": "^2.2.0",
+    "copyfiles": "^2.3.0",
     "coveralls": "^3.1.0",
     "eslint": "^7.1.0",
     "eslint-config-standard-with-typescript": "^16.0.0",
