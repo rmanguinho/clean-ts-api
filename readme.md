@@ -35,6 +35,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Liskov Substitution Principle (LSP)
 * Interface Segregation Principle (ISP)
 * Dependency Inversion Principle (DIP)
+* Separation of Concerns (SOC)
 * Don't Repeat Yourself (DRY)
 * You Aren't Gonna Need It (YAGNI)
 * Keep It Simple, Silly (KISS)
