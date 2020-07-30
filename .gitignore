@@ -4,3 +4,5 @@ coverage
 data
 !src/data
 .vscode
+package-lock.json
+yarn.lock
