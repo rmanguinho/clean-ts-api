@@ -6,3 +6,4 @@ data
 .vscode
 package-lock.json
 yarn.lock
+globalConfig.json
