@@ -13,13 +13,13 @@
     "up": "npm run build && docker-compose up -d",
     "down": "docker-compose down",
     "check": "npm-check -s -u",
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
-    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test": "tsc --noEmit && jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "tsc --noEmit && jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
-    "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info"
+    "test:coveralls": "tsc --noEmit && npm run test:ci && coveralls < coverage/lcov.info"
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
