@@ -1,6 +1,7 @@
 import { DbAddAccount } from './db-add-account'
 import { HasherSpy, AddAccountRepositorySpy, LoadAccountByEmailRepositorySpy } from '@/data/test'
 import { mockAccountModel, mockAddAccountParams, throwError } from '@/domain/test'
+import { UserRole } from '@/domain/models/account'
 
 type SutTypes = {
   sut: DbAddAccount
@@ -45,7 +46,8 @@ describe('DbAddAccount Usecase', () => {
     expect(addAccountRepositorySpy.addAccountParams).toEqual({
       name: addAccountParams.name,
       email: addAccountParams.email,
-      password: hasherSpy.digest
+      password: hasherSpy.digest,
+      role: UserRole.USER
     })
   })
 

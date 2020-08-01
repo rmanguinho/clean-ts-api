@@ -5,6 +5,7 @@ import { ok, serverError, badRequest, forbidden } from '@/presentation/helpers/h
 import { AuthenticationSpy, ValidationSpy, AddAccountSpy } from '@/presentation/test'
 import { throwError } from '@/domain/test'
 import faker from 'faker'
+import { UserRole } from '@/domain/models/account'
 
 const mockRequest = (): HttpRequest => {
   const password = faker.internet.password()
@@ -53,7 +54,8 @@ describe('SignUp Controller', () => {
     expect(addAccountSpy.addAccountParams).toEqual({
       name: httpRequest.body.name,
       email: httpRequest.body.email,
-      password: httpRequest.body.password
+      password: httpRequest.body.password,
+      role: UserRole.USER
     })
   })
 
