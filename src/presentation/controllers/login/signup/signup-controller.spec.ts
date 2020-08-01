@@ -1,5 +1,5 @@
 import { SignUpController } from './signup-controller'
-import { MissingParamError, ServerError, EmailInUseError } from '@/presentation/errors'
+import { MissingParamError, ServerError, EmailInUseError, InvalidParamError } from '@/presentation/errors'
 import { HttpRequest } from '@/presentation/protocols'
 import { ok, serverError, badRequest, forbidden } from '@/presentation/helpers/http/http-helper'
 import { AuthenticationSpy, ValidationSpy, AddAccountSpy } from '@/presentation/test'
@@ -64,6 +64,18 @@ describe('SignUp Controller', () => {
     addAccountSpy.accountModel = null
     const httpResponse = await sut.handle(mockRequest())
     expect(httpResponse).toEqual(forbidden(new EmailInUseError()))
+  })
+
+  test('Should return 403 if user role is provided', async () => {
+    const { sut } = makeSut()
+    const httpResponse = await sut.handle({
+      ...mockRequest(),
+      body: {
+        ...mockRequest().body,
+        role: 'admin'
+      }
+    })
+    expect(httpResponse).toEqual(forbidden(new InvalidParamError('role')))
   })
 
   test('Should return 200 if valid data is provided', async () => {
