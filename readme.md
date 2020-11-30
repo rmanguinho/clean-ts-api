@@ -107,7 +107,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Middlewares
 * Nível de Acesso nas Rotas (Admin, User e Anônimo)
 * Deploy no Heroku
-* SErvir Arquivos Estáticos
+* Servir Arquivos Estáticos
 
 > ## Features do Git
 

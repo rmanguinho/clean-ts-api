@@ -1,2 +1,2 @@
-export * from './criptography'
+export * from './cryptography'
 export * from './db'
