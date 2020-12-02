@@ -1,5 +1,5 @@
 import { SurveyModel } from '@/domain/models'
-import { AddSurveyParams } from '@/domain/usecases'
+import { AddSurvey } from '@/domain/usecases'
 
 import faker from 'faker'
 
@@ -22,7 +22,7 @@ export const mockSurveyModels = (): SurveyModel[] => [
   mockSurveyModel()
 ]
 
-export const mockAddSurveyParams = (): AddSurveyParams => ({
+export const mockAddSurveyParams = (): AddSurvey.Params => ({
   question: faker.random.words(),
   answers: [{
     image: faker.image.imageUrl(),
