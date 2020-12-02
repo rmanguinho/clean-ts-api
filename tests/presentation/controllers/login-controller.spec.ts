@@ -1,8 +1,8 @@
 import { LoginController } from '@/presentation/controllers'
 import { badRequest, serverError, unauthorized, ok } from '@/presentation/helpers'
 import { MissingParamError } from '@/presentation/errors'
-import { AuthenticationSpy, ValidationSpy } from '@/../tests/presentation/mocks'
-import { throwError } from '@/../tests/domain/mocks'
+import { AuthenticationSpy, ValidationSpy } from '@/tests/presentation/mocks'
+import { throwError } from '@/tests/domain/mocks'
 
 import faker from 'faker'
 

@@ -1,8 +1,8 @@
 import { SaveSurveyResultController } from '@/presentation/controllers'
 import { InvalidParamError } from '@/presentation/errors'
 import { forbidden, serverError, ok } from '@/presentation/helpers'
-import { SaveSurveyResultSpy, LoadSurveyByIdSpy } from '@/../tests/presentation/mocks'
-import { throwError } from '@/../tests/domain/mocks'
+import { SaveSurveyResultSpy, LoadSurveyByIdSpy } from '@/tests/presentation/mocks'
+import { throwError } from '@/tests/domain/mocks'
 
 import MockDate from 'mockdate'
 import faker from 'faker'
