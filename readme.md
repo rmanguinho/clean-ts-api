@@ -100,6 +100,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Module-Alias
 * Copyfiles
 * Npm Check
+* Bson ObjectId
 
 > ## Features do Node
 
