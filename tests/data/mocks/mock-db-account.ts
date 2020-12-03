@@ -3,11 +3,11 @@ import { AddAccountRepository, LoadAccountByEmailRepository, LoadAccountByTokenR
 import faker from 'faker'
 
 export class AddAccountRepositorySpy implements AddAccountRepository {
-  addAccountParams: AddAccountRepository.Params
+  params: AddAccountRepository.Params
   result = true
 
-  async add (data: AddAccountRepository.Params): Promise<AddAccountRepository.Result> {
-    this.addAccountParams = data
+  async add (params: AddAccountRepository.Params): Promise<AddAccountRepository.Result> {
+    this.params = params
     return this.result
   }
 }
