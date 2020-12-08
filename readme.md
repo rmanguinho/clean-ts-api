@@ -87,6 +87,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Express
 * Apollo Server Express
 * Graphql
+* Graphql ISO Date
 * Supertest
 * Husky
 * Lint Staged
@@ -114,6 +115,16 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Nível de Acesso nas Rotas (Admin, User e Anônimo)
 * Deploy no Heroku
 * Servir Arquivos Estáticos
+
+> ## Features do GraphQL
+
+* Types
+* Queries
+* Mutations
+* Resolvers
+* Directives
+* Scalars
+* Plugins
 
 > ## Features do Git
 
