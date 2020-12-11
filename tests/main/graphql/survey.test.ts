@@ -1,4 +1,4 @@
-import { makeApolloServer } from './helpers'
+import { makeApolloServer } from '@/tests/main/graphql/helpers'
 import { MongoHelper } from '@/infra/db'
 import env from '@/main/config/env'
 

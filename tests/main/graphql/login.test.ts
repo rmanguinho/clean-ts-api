@@ -1,4 +1,4 @@
-import { makeApolloServer } from './helpers'
+import { makeApolloServer } from '@/tests/main/graphql/helpers'
 import { MongoHelper } from '@/infra/db'
 
 import { ApolloServer, gql } from 'apollo-server-express'
