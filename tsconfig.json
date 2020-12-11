@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "commonjs",
-    "target": "es2020",
+    "target": "es2019",
     "esModuleInterop": true,
     "sourceMap": true,
     "rootDirs": ["src", "tests"],
