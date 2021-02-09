@@ -8,5 +8,4 @@ data
 globalConfig.json
 # stryker temp files
 .stryker-tmp
-stryker-tmp
 reports
