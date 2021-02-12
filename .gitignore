@@ -9,3 +9,4 @@ globalConfig.json
 # stryker temp files
 .stryker-tmp
 reports
+yarn.lock
