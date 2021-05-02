@@ -35,8 +35,8 @@ describe('DbLoadSurveyResult UseCase', () => {
   })
 
   beforeEach(() => {
-    surveyId = faker.random.uuid()
-    accountId = faker.random.uuid()
+    surveyId = faker.datatype.uuid()
+    accountId = faker.datatype.uuid()
   })
 
   test('Should call LoadSurveyResultRepository with correct values', async () => {
