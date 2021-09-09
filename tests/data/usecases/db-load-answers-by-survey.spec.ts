@@ -22,7 +22,7 @@ let surveyId: string
 
 describe('DbLoadAnswersBySurvey', () => {
   beforeEach(() => {
-    surveyId = faker.random.uuid()
+    surveyId = faker.datatype.uuid()
   })
 
   test('Should call LoadAnswersBySurveyRepository', async () => {

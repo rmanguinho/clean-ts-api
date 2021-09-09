@@ -8,9 +8,9 @@ import MockDate from 'mockdate'
 import faker from 'faker'
 
 const mockRequest = (answer: string = null): SaveSurveyResultController.Request => ({
-  surveyId: faker.random.uuid(),
+  surveyId: faker.datatype.uuid(),
   answer,
-  accountId: faker.random.uuid()
+  accountId: faker.datatype.uuid()
 })
 
 type SutTypes = {
