@@ -94,6 +94,8 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Apollo Server Express
 * Graphql
 * Graphql ISO Date
+* Graphql Scalars
+* Graphql Tools
 * Supertest
 * Husky
 * Lint Staged
@@ -157,6 +159,15 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Build
 * Deploy
 * Uso de Breakpoints
+
+> ## Features do GraphQL
+
+* Resolvers
+* Type Definitions
+* Directives
+* Scalars
+* Plugins
+* Error Handling
 
 > ## Features de Testes
 
