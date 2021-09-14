@@ -19,7 +19,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 <br /><br />
 
 ## Contribua com esse Projeto <3
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M265FO6)
+<a href='https://ko-fi.com/M4M265FO6' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 <br />
 
