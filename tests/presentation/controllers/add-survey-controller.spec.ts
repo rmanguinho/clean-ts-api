@@ -1,10 +1,9 @@
 import { AddSurveyController } from '@/presentation/controllers'
-import { badRequest, serverError, noContent } from '@/presentation/helpers'
-import { ValidationSpy, AddSurveySpy } from '@/tests/presentation/mocks'
+import { badRequest, noContent } from '@/presentation/helpers'
 import { throwError } from '@/tests/domain/mocks'
-
-import MockDate from 'mockdate'
+import { AddSurveySpy, ValidationSpy } from '@/tests/presentation/mocks'
 import faker from 'faker'
+import MockDate from 'mockdate'
 
 const mockRequest = (): AddSurveyController.Request => ({
   question: faker.random.words(),
@@ -54,6 +53,13 @@ describe('AddSurvey Controller', () => {
     expect(httpResponse).toEqual(badRequest(validationSpy.error))
   })
 
+  test('Should throw if Validate throws', async () => {
+    const { sut, validationSpy } = makeSut()
+    jest.spyOn(validationSpy,'validate').mockImplementation(throwError)
+    const promise = sut.handle(mockRequest())
+    await expect(promise).rejects.toThrow()
+  })
+
   test('Should call AddSurvey with correct values', async () => {
     const { sut, addSurveySpy } = makeSut()
     const request = mockRequest()
@@ -61,11 +67,11 @@ describe('AddSurvey Controller', () => {
     expect(addSurveySpy.params).toEqual({ ...request, date: new Date() })
   })
 
-  test('Should return 500 if AddSurvey throws', async () => {
+  test('Should throw if AddSurvey throws', async () => {
     const { sut, addSurveySpy } = makeSut()
     jest.spyOn(addSurveySpy, 'add').mockImplementationOnce(throwError)
-    const httpResponse = await sut.handle(mockRequest())
-    expect(httpResponse).toEqual(serverError(new Error()))
+    const promise = sut.handle(mockRequest())
+    await expect(promise).rejects.toThrow()
   })
 
   test('Should return 204 on success', async () => {
