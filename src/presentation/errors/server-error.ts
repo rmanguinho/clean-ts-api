@@ -1,7 +1,7 @@
-export class ServerError extends Error {
-  constructor (stack: string) {
-    super('Internal server error')
+export class ServerError extends AggregateError {
+  constructor (...errors: Error[]) {
+    super(errors, 'Internal server error')
     this.name = 'ServerError'
-    this.stack = stack
+    this.stack = errors.map(error => error.stack).join('\n')
   }
 }
