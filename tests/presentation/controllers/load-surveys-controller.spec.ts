@@ -1,10 +1,9 @@
 import { LoadSurveysController } from '@/presentation/controllers'
-import { ok, serverError, noContent } from '@/presentation/helpers'
-import { LoadSurveysSpy } from '@/tests/presentation/mocks'
+import { noContent, ok } from '@/presentation/helpers'
 import { throwError } from '@/tests/domain/mocks'
-
-import MockDate from 'mockdate'
+import { LoadSurveysSpy } from '@/tests/presentation/mocks'
 import faker from 'faker'
+import MockDate from 'mockdate'
 
 const mockRequest = (): LoadSurveysController.Request => ({ accountId: faker.datatype.uuid() })
 
@@ -51,10 +50,10 @@ describe('LoadSurveys Controller', () => {
     expect(httpResponse).toEqual(noContent())
   })
 
-  test('Should return 500 if LoadSurveys throws', async () => {
+  test('Should throw if LoadSurveys throws', async () => {
     const { sut, loadSurveysSpy } = makeSut()
     jest.spyOn(loadSurveysSpy, 'load').mockImplementationOnce(throwError)
-    const httpResponse = await sut.handle(mockRequest())
-    expect(httpResponse).toEqual(serverError(new Error()))
+    const promise = sut.handle(mockRequest())
+    await expect(promise).rejects.toThrow()
   })
 })
