@@ -64,7 +64,7 @@
     "@graphql-tools/utils": "^8.2.2",
     "apollo-server-express": "^3.3.0",
     "bcrypt": "^5.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^15.5.3",
     "graphql-scalars": "^1.10.1",
     "jsonwebtoken": "^8.5.1",
