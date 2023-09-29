@@ -114,7 +114,7 @@ describe('SurveyMongoRepository', () => {
       expect(exists).toBe(true)
     })
 
-    test('Should return false if survey exists', async () => {
+    test('Should return false if survey not exists', async () => {
       const sut = makeSut()
       const exists = await sut.checkById(new FakeObjectId().toHexString())
       expect(exists).toBe(false)
