@@ -1,11 +1,10 @@
 import { SaveSurveyResultController } from '@/presentation/controllers'
 import { InvalidParamError } from '@/presentation/errors'
-import { forbidden, serverError, ok } from '@/presentation/helpers'
-import { SaveSurveyResultSpy, LoadAnswersBySurveySpy } from '@/tests/presentation/mocks'
+import { forbidden, ok } from '@/presentation/helpers'
 import { throwError } from '@/tests/domain/mocks'
-
-import MockDate from 'mockdate'
+import { LoadAnswersBySurveySpy, SaveSurveyResultSpy } from '@/tests/presentation/mocks'
 import faker from 'faker'
+import MockDate from 'mockdate'
 
 const mockRequest = (answer: string = null): SaveSurveyResultController.Request => ({
   surveyId: faker.datatype.uuid(),
@@ -53,11 +52,11 @@ describe('SaveSurveyResult Controller', () => {
     expect(httpResponse).toEqual(forbidden(new InvalidParamError('surveyId')))
   })
 
-  test('Should return 500 if LoadAnswersBySurvey throws', async () => {
+  test('Should throw if LoadAnswersBySurvey throws', async () => {
     const { sut, loadAnswersBySurveySpy } = makeSut()
     jest.spyOn(loadAnswersBySurveySpy, 'loadAnswers').mockImplementationOnce(throwError)
-    const httpResponse = await sut.handle(mockRequest())
-    expect(httpResponse).toEqual(serverError(new Error()))
+    const promise = sut.handle(mockRequest())
+    await expect(promise).rejects.toThrow()
   })
 
   test('Should return 403 if an invalid answer is provided', async () => {
@@ -78,12 +77,12 @@ describe('SaveSurveyResult Controller', () => {
     })
   })
 
-  test('Should return 500 if SaveSurveyResult throws', async () => {
+  test('Should throw if SaveSurveyResult throws', async () => {
     const { sut, saveSurveyResultSpy, loadAnswersBySurveySpy } = makeSut()
     jest.spyOn(saveSurveyResultSpy, 'save').mockImplementationOnce(throwError)
     const request = mockRequest(loadAnswersBySurveySpy.result[0])
-    const httpResponse = await sut.handle(request)
-    expect(httpResponse).toEqual(serverError(new Error()))
+    const promise = sut.handle(request)
+    await expect(promise).rejects.toThrow()
   })
 
   test('Should return 200 on success', async () => {
